@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'top#show'
   get 'rooms/show'
   
   mount ActionCable.server => '/cable'
